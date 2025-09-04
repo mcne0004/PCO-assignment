@@ -1,3 +1,5 @@
+/* Reset values for multiple parameters */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@
     vertical-align: baseline;
     background: transparent;
 }
+
+/* Tweaked values for default elements*/
 
 body {
     font-family: sans-serif;
@@ -19,12 +23,23 @@ body {
     background-size: cover;
 }
 
+main {
+    background-color: #222222;
+    width: auto;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 15px;
+} 
+
 img {
     border: 5px solid #3b3b3b;
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 p {
@@ -39,8 +54,15 @@ h1 {
 
 ul {
     font-size: 15px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    text-align: left;
 }
+
+a {
+    color: #00fff7;
+}
+
+/* Classes that change values for specific elements */
 
 .thin {
   line-height: 0.9;
@@ -59,14 +81,44 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+.listoffset {
+    left: 42%;
+    position: relative;
 }
 
-main {
-    background-color: #2a2a2a;
-    width: 50%;
+/* Menu bar classes */
+
+#menubar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+    display: inline-block;
     border-radius: 10px;
-    top: 2%;
-    left: 25%;
-    position: absolute;
+}
+
+#menubar .menuitem {
+    float: left;
+}
+
+#menubar .menuitem .menuitemcontent {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    height: 15px;
+    font-size: 15px;
+}
+
+#menubar .menuitem .menuitemcontent:hover {
+    background-color: #111111;
+}
+
+.menuitemimage {
+    border: 0px;
+    height: auto;
+    width: 80px;
 }
