@@ -32,6 +32,7 @@ main {
     transform: translate(-50%, -50%);
     position: absolute;
     padding: 15px;
+    animation: fade-in 2s;
 } 
 
 img {
@@ -82,14 +83,14 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-.listoffset {
+.list-offset {
     left: 42%;
     position: relative;
 }
 
 /* Menu bar classes */
 
-#menubar {
+#menu-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -99,11 +100,11 @@ a {
     border-radius: 10px;
 }
 
-#menubar .menuitem {
+#menu-bar .menu-item {
     float: left;
 }
 
-#menubar .menuitem .menuitemcontent {
+#menu-bar .menu-item .menu-item-content {
     display: block;
     color: white;
     text-align: center;
@@ -113,12 +114,23 @@ a {
     font-size: 15px;
 }
 
-#menubar .menuitem .menuitemcontent:hover {
+#menu-bar .menu-item .menu-item-content:hover {
     background-color: #111111;
 }
 
-.menuitemimage {
+.menu-item-image {
     border: 0px;
     height: auto;
     width: 80px;
-}                                                                                                                                                                                                                                                                                                           
+}
+
+/* Fade effects */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

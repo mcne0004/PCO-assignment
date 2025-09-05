@@ -1,8 +1,8 @@
 function addEvent() {
-    var a = document.getElementById("vineboom")
+    let a = document.getElementById("vine-boom")
     a.addEventListener("click", play)
 }
 function play() {
-    var audio = document.getElementById("audio");
+    let audio = document.getElementById("audio");
     audio.play();
 }
