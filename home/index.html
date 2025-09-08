@@ -4,75 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="../content/css/style.css">
+        <link rel="stylesheet" href="../generic/style.css">
         <title>Home</title>
     </head>
-    <header>
-        <ul id="menu-bar">
-            <li class="menu-item">
-                <a class="menu-item-content" href="../home">Home</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-item-content"  href="../profile">Profile</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-item-content"  href="../blog">Blog</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-item-content"  href="../faq">FAQ</a>
-            </li>
-            <li class="menu-item">
-                <a class="menu-item-content" href="http://hz.nl">
-                    <img class="menu-item-image" 
-                    src="../content/img/all/hz-university-of-applied-sciences.png" 
-                    alt="Logo of HZ University of Applied Sciences">
-                </a>
-            </li>
-        </ul>
+    <header onload="addEvents()">
+        <script type="text/javascript" src="../generic/js/load-nav-menu.js"></script>
+        <audio id="pop-audio" src="../generic/audio/pop.ogg"></audio>
+        <ul id="nav-menu"></ul>
     </header>
-    <body class="center" onload="addEvent()">
-        <script type="text/javascript" src="../content/js/play-vine-boom.js"></script>
-        <audio id="audio" src="../content/audio/vine-boom.mp3"></audio>
-        <main>
-            <section class="center">
-                <img id="vine-boom" class="wide center" 
-                src="../content/img/index/welcome.jpg" 
-                alt="Markiplier art with Welcome text" style="height:100px;width:300px">
-                <img class="wide center" src="../content/img/index/average-discord-mod.gif" 
-                alt="What a Discord mod does on a daily basis" style="height:100px;width:300px">
-            </section>
-            <h1 class="wide center">
-                Why I chose <a href="https://hz.nl/en/study-programmes/it" target="_blank" 
-                rel="noopener noreferrer">HBO-ICT</a>
-            </h1>
-            <p class="thin center">
-                Before starting here at HZ, I was in <a 
-                href="https://www.scalda.nl/opleiding/allround-medewerker-it-systems-and-devices" 
-                target="_blank" rel="noopener noreferrer">an IT course at Scalda.</a><br><br>
-                We did loads of IT-related stuff there, but not so much work on coding.<br>
-                I wanted to do more with coding, especially after trying some programming 
-                languages myself.<br><br>
-                Another reason why I chose HBO-ICT is because so far, I've enjoyed solving 
-                problems with code.<br>
-                I have even made some functional, but small programs in Python to tackle 
-                something I wanted to get done!<br>
-                I have also messed around with Powershell in the past and made some small 
-                programs with that, too.<br><br>
-                Programming languages that interest me the most right now are:<br>
+    <body>
+        <div class="container">
+            <p>
+                Test
             </p>
-            <div class="wide list-offset">
-                <ul>
-                    <li>
-                        HTML/CSS
-                    </li>
-                    <li>
-                        Javascript
-                    </li>
-                    <li>
-                        Python
-                    </li>
-                </ul>
-            </div>
-        </main>  
+        </div>
+        <div class="container">
+
+        </div>
     </body>
 </html>

@@ -1,0 +1,92 @@
+/* Reset CSS styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: monospace;
+}
+
+/* Default HTML element tweaks */
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    min-height: auto; 
+    width: 100%;
+    background-color: #000000;
+}
+
+ /* Background layer */
+
+body::before {
+    content:"";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("img/keyboardtyping.gif") center/cover no-repeat;
+    filter: blur(20px);
+    z-index: -1; 
+}
+
+/* Navigation menu */
+
+#nav-menu {
+    width: fit-content;
+    display: flex;
+    margin: 10px auto;
+    padding: 0;
+    background-color: #202020;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.64);
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+#nav-menu .nav-item {
+    display: inline-block;
+}
+
+#nav-menu .nav-item a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    height: 20px;
+    font-size: 22px;
+    transition: box-shadow 1s ease;
+    border-radius: 5px;
+}
+
+#nav-menu .nav-item a:hover {
+    box-shadow: 0px 0px 50px 24px rgba(0, 0, 0, 0.78);
+}
+
+#nav-menu .nav-item a img {
+    height: inherit;
+}
+
+/* Webpage components */
+
+body .container {
+    position: relative;
+    margin: 15px auto;
+    padding: 10px;
+    width: 80%;
+    display: inline-block;
+    top: 70px;
+    left: 10%;
+    background-color: #252525;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 5px solid #202020;
+    box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.72);
+}
