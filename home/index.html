@@ -7,19 +7,55 @@
         <link rel="stylesheet" href="../generic/style.css">
         <title>Home</title>
     </head>
-    <header onload="addEvents()">
+    <header>
         <script type="text/javascript" src="../generic/js/load-nav-menu.js"></script>
-        <audio id="pop-audio" src="../generic/audio/pop.ogg"></audio>
+        <!-- <audio id="pop-audio" src="../generic/audio/pop.ogg"></audio> -->
         <ul id="nav-menu"></ul>
     </header>
-    <body>
+    <body onload="vineBoomEvent()">
+        <script type="text/javascript" src="../generic/js/play-vine-boom.js"></script>
+        <audio id="vine-boom-audio" src="../generic/audio/vine-boom.mp3"></audio>
         <div class="container">
-            <p>
-                Test
-            </p>
+            <div class="section-img">
+                <img id="vine-boom-trigger" class="big-width-img" src="welcome.jpg" 
+                alt="Markiplier art with Welcome text">
+            </div>
+            <div class="section">
+                <h1>
+                    Why I chose <a href="https://www.hz.nl/en/study-programmes/it" 
+                    target="_blank" rel="noopener noreferrer">HBO-ICT</a>
+                </h1>
+                <p>
+                    Before starting here at HZ, I was in <a 
+                    href="https://www.scalda.nl/opleiding/allround-medewerker-it-systems-and-devices" 
+                    target="_blank" rel="noopener noreferrer">an IT course at Scalda.</a><br><br>
+                    We did loads of IT-related stuff there, but not so much work on coding.<br>
+                    I wanted to do more with coding, especially after trying some programming 
+                    languages myself.<br>                    
+                </p>
+            </div>
         </div>
         <div class="container">
-
+            <div class="section">
+                <p>
+                    Another reason why I chose HBO-ICT is because so far, I've enjoyed solving 
+                    problems with code.<br><br>
+                    I have even made some functional, but small programs in Python to tackle 
+                    something I wanted to get done!<br>
+                    I have also messed around with Powershell in the past and made some small 
+                    programs with that, too.<br><br>
+                    Programming languages that interest me the most right now are:<br><br>
+                </p>
+                <ul>
+                    <li> - HTML/CSS</li>
+                    <li> - Javascript</li>
+                    <li> - Python</li>
+                </ul>
+            </div>
+            <div class="section-img">
+                <img class="big-width-img" src="average-discord-mod.gif" 
+                alt="Meme where a person sleeps and plays video games every day">
+            </div>
         </div>
     </body>
 </html>

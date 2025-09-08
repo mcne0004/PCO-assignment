@@ -5,7 +5,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
     font-family: monospace;
@@ -21,8 +20,6 @@ body {
     background-color: #000000;
 }
 
- /* Background layer */
-
 body::before {
     content:"";
     position: fixed;
@@ -33,6 +30,23 @@ body::before {
     background: url("img/keyboardtyping.gif") center/cover no-repeat;
     filter: blur(20px);
     z-index: -1; 
+}
+
+a {
+    color: #00fff7;
+}
+
+p {
+    font-size: 1vw;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+ul {
+    font-size: 2vw;
+    list-style-type: none;
 }
 
 /* Navigation menu */
@@ -48,6 +62,7 @@ body::before {
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 99;
 }
 
 #nav-menu .nav-item {
@@ -78,15 +93,48 @@ body::before {
 
 body .container {
     position: relative;
-    margin: 15px auto;
-    padding: 10px;
+    margin: 1vw auto;
+    padding: 2vw 0;
     width: 80%;
-    display: inline-block;
+    display: inline-flex;
     top: 70px;
     left: 10%;
-    background-color: #252525;
     color: #ffffff;
-    border-radius: 10px;
+    gap: 2vw;
+}
+
+body .container .section {
+    color: #ffffff;
+    background-color: #252525;
     border: 5px solid #202020;
     box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.72);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    gap: 2vw;
+    flex: 0 1 auto;
+}
+
+body .container .section-img {
+    color: #ffffff;
+    background-color: #252525;
+    border: 5px solid #202020;
+    box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.72);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    gap: 2vw;
+    flex: 1 0 auto;
+}
+
+body .container .section-img .big-width-img {
+    width: 50vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+body .container .section-img .small-width-img {
+    width: 30vw;
+    height: auto;
+    border-radius: 10px;
 }
