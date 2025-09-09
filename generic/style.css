@@ -112,7 +112,7 @@ body .container .section {
     display: inline-block;
     padding: 15px;
     gap: 2vw;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 }
 
 body .container .section-img {
@@ -136,5 +136,10 @@ body .container .section-img .big-width-img {
 body .container .section-img .small-width-img {
     width: 30vw;
     height: auto;
+    border-radius: 10px;
+}
+
+body .container .section #articles .article {
+    border: 5px solid #202020;
     border-radius: 10px;
 }
