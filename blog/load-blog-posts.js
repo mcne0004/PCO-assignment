@@ -13,7 +13,7 @@ async function loadBlogPosts() {
         let date = blogpost.getElementById("date").innerHTML
         let description = blogpost.getElementById("description").innerHTML
 
-        const article = await fetch(window.location.origin + "/blog/article.html")
+        const article = await fetch("../blog/article.html")
         const articletext = await article.text()
 
         let articlehtml = new DOMParser().parseFromString(articletext, "text/html")
