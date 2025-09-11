@@ -251,6 +251,11 @@ body .container .section #articles .article {
     line-height: 2vw;
 }
 
+.big-text a {
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
 /* Keyframes */
 
 @keyframes fadeIn {
