@@ -1,5 +1,5 @@
 async function loadNavMenu() {
-    const file = await fetch("../generic/html/nav-menu.html")
+    const file = await fetch("/generic/html/nav-menu.html")
     const text = await file.text()
 
     document.getElementById("nav-menu").innerHTML = text
