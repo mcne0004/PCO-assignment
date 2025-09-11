@@ -63,6 +63,11 @@ li {
     line-height: 2vw;
 }
 
+li i {
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
 table {
     border-collapse: separate;
     border-spacing: 1vw;
@@ -90,6 +95,11 @@ aside {
     float: right;
     background-color: #333333;
     border-radius: 5px;
+    font-size: 2vw;
+    line-height: 2.2vw;
+}
+
+aside a {
     font-size: 2vw;
     line-height: 2.2vw;
 }
