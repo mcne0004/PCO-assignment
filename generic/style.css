@@ -43,6 +43,21 @@ p {
     line-height: 1.3vw;
 }
 
+p strong {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+}
+
+p label {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+}
+
+p i {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+}
+
 h1 {
     font-size: 3vw;
     line-height: 3vw;
