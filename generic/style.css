@@ -127,6 +127,8 @@ body .container {
     left: 10%;
     color: #ffffff;
     gap: 2vw;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
 }
 
 body .container .section {
@@ -196,4 +198,11 @@ body .container .section #articles .article {
 
 .red {
     color: #ff0000;
+}
+
+/* Keyframes */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
