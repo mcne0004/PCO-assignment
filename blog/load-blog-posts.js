@@ -5,7 +5,7 @@ let pagestoload = Array(pagesize).fill().map((_, index) => -index + latestpost -
 
 async function loadBlogPosts() {
     for (item of pagestoload) {
-        const file = await fetch("../blog/" + item.toString() + ".html")
+        const file = await fetch(document.URL + item.toString() + ".html")
         const text = await file.text()
 
         let blogpost = new DOMParser().parseFromString(text, "text/html")
@@ -13,7 +13,7 @@ async function loadBlogPosts() {
         let date = blogpost.getElementById("date").innerHTML
         let description = blogpost.getElementById("description").innerHTML
 
-        const article = await fetch("../blog/article.html")
+        const article = await fetch(document.URL + "article.html")
         const articletext = await article.text()
 
         let articlehtml = new DOMParser().parseFromString(articletext, "text/html")
