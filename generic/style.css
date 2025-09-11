@@ -172,6 +172,22 @@ body .container .section #articles .article {
     padding: 1vw;
 }
 
+.title {
+    font-size: 2vw;
+}
+
+.date {
+    font-size: 1vw;
+}
+
+.description {
+    font-size: 0.8vw;
+}
+
+.articlelink {
+    font-size: 0.8vw;
+}
+
 /* Colors */
 
 .green {
