@@ -5,7 +5,7 @@ let pagestoload = Array(pagesize).fill().map((_, index) => -index + latestpost -
 
 async function loadBlogPosts() {
     for (item of pagestoload) {
-        const file = await fetch(window.location.origin + "/blog/" + item.toString() + ".html")
+        const file = await fetch("../blog/" + item.toString() + ".html")
         const text = await file.text()
 
         let blogpost = new DOMParser().parseFromString(text, "text/html")
