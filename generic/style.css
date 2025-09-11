@@ -8,6 +8,7 @@
     vertical-align: baseline;
     background: transparent;
     font-family: monospace;
+    line-height: 1vw;
 }
 
 /* Default HTML element tweaks */
@@ -43,6 +44,12 @@ p {
 
 h1 {
     font-size: 3vw;
+    line-height: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+    line-height: 2vw;
 }
 
 ul {
@@ -50,12 +57,21 @@ ul {
     list-style-type: none;
 }
 
+li {
+    line-height: 2vw;
+}
+
 table {
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: 1vw;
+}
+
+th {
+    font-size: 1vw;
 }
 
 td {
+    font-size: 1vw;
     border: 1px solid #ffffff;
     padding: 5px;
     background-color: #434343;
@@ -67,13 +83,13 @@ progress {
 }
 
 aside {
-    width: 12vw;
-    padding: 10px;
-    margin-left: 15px;
+    width: auto;
+    padding: 5px;
     float: right;
     font-style: italic;
     background-color: #333333;
     border-radius: 5px;
+    font-size: 2vw;
 }
 
 /* Navigation menu */
@@ -97,14 +113,14 @@ aside {
 }
 
 #nav-menu .nav-item a {
-    display: block;
+    display: flex;
     color: #ffffff;
-    text-align: center;
     padding: 10px 10px;
     height: 20px;
-    font-size: 22px;
-    transition: box-shadow 1s ease;
+    font-size: 20px;
+    transition: box-shadow 1s ease, font-size 0.5s;
     border-radius: 5px;
+    line-height: 20px;
 }
 
 #nav-menu .nav-item a:hover {
@@ -137,10 +153,11 @@ body .container .section {
     border: 5px solid #202020;
     box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.72);
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
     padding: 15px;
     gap: 2vw;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
+    flex-direction: column;
 }
 
 body .container .section-img {
@@ -149,20 +166,21 @@ body .container .section-img {
     border: 5px solid #202020;
     box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.72);
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
     padding: 15px;
     gap: 2vw;
-    flex: 1 0 auto;
+    flex: 0 1 auto;
+    flex-direction: column;
 }
 
 body .container .section-img .big-width-img {
-    width: 50vw;
+    width: 35vw;
     height: auto;
     border-radius: 10px;
 }
 
 body .container .section-img .small-width-img {
-    width: 30vw;
+    width: 20vw;
     height: auto;
     border-radius: 10px;
 }
@@ -172,6 +190,7 @@ body .container .section #articles .article {
     border-radius: 10px;
     background-color: #353535;
     padding: 1vw;
+    line-height: 1vw;
 }
 
 .title {
@@ -190,7 +209,7 @@ body .container .section #articles .article {
     font-size: 0.8vw;
 }
 
-/* Colors */
+/* Colors and font sizes*/
 
 .green {
     color: #00ff00;
@@ -200,9 +219,24 @@ body .container .section #articles .article {
     color: #ff0000;
 }
 
+.big-text {
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
 /* Keyframes */
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Media rules for mobile devices */
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    #nav-menu .nav-item a {
+        font-size: 8px;
+        height: 8px;
+        line-height: 8px;
+    }
 }

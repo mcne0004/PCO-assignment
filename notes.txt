@@ -1,0 +1,7 @@
+to do:
+- fix images not resizing to smaller size (noticible on mobile) FIXED
+- fix nav-menu being too big on mobile FIXED
+- fix weird spacing in blog posts when screen width is very small FIXED
+- change aside menu position to section below to prevent jank on mobile FIXED
+- change dashboard to properly resize font-size (noticible on mobile) FIXED
+- fix sitemap items going off-screen when screen width is small FIXED
