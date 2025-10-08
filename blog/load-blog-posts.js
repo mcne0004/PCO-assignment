@@ -23,7 +23,7 @@ async function loadBlogPosts() {
     articlehtml.getElementsByClassName("title")[0].innerHTML = title
     articlehtml.getElementsByClassName("date")[0].innerHTML = date
     articlehtml.getElementsByClassName("description")[0].innerHTML = description
-    articlehtml.getElementsByClassName("articlelink")[0].setAttribute("href", document.URL + item.toString() + ".html")
+    articlehtml.getElementsByClassName("articlelink")[0].setAttribute("href", document.URL + match)
 
     document.getElementById("articles").innerHTML += articlehtml.documentElement.innerHTML
   }
